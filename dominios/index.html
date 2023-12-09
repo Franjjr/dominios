@@ -3,14 +3,71 @@
 <head>
     <title>Título de la página</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/main.js"></script>   
+    <script src="js/main.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
 <!-- Contenido HTML empieza aqui -->
 
-
+<form class="container mt-5">
+  <h1 class="mb-3">Generador de Dominios</h1>
+  <div class="alert alert-primary" role="alert">
+    Rellena el siguiente formulario, marca los dominios que quieres comprobar y dale al boton de "Generar dominios".  La magia hara el resto.
+  </div>
+    <div class="row mb-3">
+      <label for="inputart" class="col-sm-2 col-form-label">Árticulos</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputart" placeholder="Por favor pon los árticulos separados por ´;´">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="inputadj" class="col-sm-2 col-form-label">Adjetivos</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputadj" placeholder="Por favor pon los adjetivos separados por ´;´">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="inputnom" class="col-sm-2 col-form-label">Nombres</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputnom" placeholder="Por favor pon los nombres separados por ´;´">
+      </div>
+    </div>
+    <fieldset class="row mb-3">
+      <legend class="col-form-label col-sm-2 pt-0">Extensiones</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+          <label class="form-check-label" for="flexCheckDefault">
+            .com
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+          <label class="form-check-label" for="flexCheckChecked">
+            .es
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+          <label class="form-check-label" for="flexCheckChecked">
+            .edu
+          </label>
+        </div>
+      </div>
+    </fieldset>
+    <div class="row m-4 text-center">
+      <div class="col-sm-4 offset-sm-2">
+        <button type="submit" class="btn btn-primary">Generar dominios</button>
+      </div>
+    </div>
+  </form>
+<div id="resultado" class="container mt-5">
+  <div class="alert alert-primary" role="alert">
+    <h4 class="alert-heading">Dominios generados</h4>
+    <p>Estos son los dominios generados a partir de los datos introducidos en el formulario.</p>
+    <hr>
+</div>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
